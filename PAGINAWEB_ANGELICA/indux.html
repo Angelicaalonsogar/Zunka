@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseñ.css"> <!-- CSS -->
+    <script src="metd.js" defer></script> <!-- JS -->
+    <title>EVENTOS</title>
+</head>
+<body>
+
+    <h1>Bienvenido a Zunka</h1>
+    <div class="hidden-space">
+        <img src="inicio.png" alt="Login" id="login-link">
+
+    </div>
+    
+
+    <script>
+        document.getElementById('login-link').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+
+        document.getElementById('register-link').addEventListener('click', function() {
+            window.location.href = 'register.html';
+        });
+    </script>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="indux.html">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="servicios.html">SERVICIOS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">EMPRESARIAL</a></li>
+                        <li><a href="#">SOCIAL</a></li>
+                        <li><a href="#">TURISTICO</a></li>
+                        <li><a href="#">EDUCATIVO</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="catalogo.html">CATALOGO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>ZUNKA <br> ORGANIZACIÓN DE EVENTOS</h1>
+        </div>
+    </section>
+
+    <section id="content-container">
+        <div class="image-container">
+            <img src="entre.jpg" alt="Imagen">
+        </div>
+        <div class="text-container">
+            <p>
+                Bienvenidos a <b>ZUNKA</b> donde podrás organizar eventos de todo tipo: <br>
+            </p>
+            <p> 
+                1. SOCIALES
+            </p>
+            <p>
+                2. EMPRESARIALES 
+            </p>
+            <p>
+                3. EDUCATIVOS 
+            </p>
+            <p>
+                4. TURÍSTICO
+            </p>
+        </div>
+    </section>
+
+    <div id="servicios">
+        <section class="black-background-section">
+            <h2>¿POR QUÉ SOMOS LA MEJOR ELECCIÓN?</h2>
+            <div class="circular-containers">
+                <div class="circular-container">
+                    <img src="tomando_manos.png" alt="Imagen 1">
+                    <p>Tenemos experiencia y profesionalismo</p>
+                </div>
+                <div class="circular-container">
+                    <img src="dialogo.jpg" alt="Imagen 2">
+                    <p>Atención personalizada</p>
+                </div>
+                <div class="circular-container">
+                    <img src="Servicios integrales.jpg" alt="Imagen 3">
+                    <p>Servicios integrales</p>
+                </div>
+            </div>
+            <div class="blue-bordered-container">
+                <img src="secretaria.jpg" alt="">
+            </div>
+        </section>
+    </div>
+
+    <section class="white-background-section">
+        <h3>NUESTROS EVENTOS</h3>
+        <div class="blue-bordered-container">
+            <div id="image-container">
+                <img id="event-image" src="fondo.jpg" alt="Evento 1">
+            </div>
+            <button id="next-button" onclick="showNextImage()">Siguiente</button>
+        </div>
+    </section>
+
+    <footer>
+        <h1 class="title">ZUNKA</h1>
+        <p>VISITA NUESTRAS REDES OFICIALES</p>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/?locale=es_LA" class="social-button facebook">Facebook</a>
+            <a href="https://www.instagram.com/" class="social-button instagram">Instagram</a>
+            <a href="https://twitter.com/?lang=es" class="social-button twitter">Twitter</a>
+        </div>
+    </footer>
+
+    <a href="ayuda.html" class="back-button">AYUDA</a>
+</body>
+</html>
